@@ -1,0 +1,127 @@
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #f2a900;
+    color: #fff;
+    padding: 1.2rem 1rem; /* Increased vertical padding if needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* For absolute positioning of the text */
+}
+
+.logo {
+    height: 45px; /* Adjust if your logo height is different */
+    width: auto;
+}
+
+.foundation-name {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px; /* Increased font size to match larger logo */
+    position: absolute;
+    left: 55px; /* Adjusted to account for larger logo */
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+article {
+    font-size: 0.9rem;
+}
+
+article p {
+    margin-bottom: 1em;
+}
+
+footer {
+    background: #f2a900;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btc-ticker, .halving-countdown {
+    font-weight: bold;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.btc-ticker {
+    text-align: left;
+}
+
+.halving-countdown {
+    text-align: right;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin: 0 1rem;
+    text-align: center;
+    flex: 1;
+}
