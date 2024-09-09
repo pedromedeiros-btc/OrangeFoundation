@@ -25,7 +25,7 @@
     </header>
     <div class="content-wrapper">
         <main>
-            <h1>Everyone buys and sells Bitcoin at the price they're supposed to.</h1>
+            <h1>Everyone buys and sells Bitcoin at the price they deserve.</h1>
             <p class="subtitle">And what about you?</p>
             <article>
                 <p>In the wake of the 2008 financial crisis, as trust in traditional banking systems crumbled, a revolutionary form of digital currency emerged: Bitcoin. Created by an anonymous entity known as Satoshi Nakamoto, Bitcoin was born out of the need for a decentralized, transparent, and secure monetary system that could operate independently of government control and bank intermediaries.</p>
@@ -74,7 +74,7 @@ function updateHalvingCountdown() {
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 
-    document.getElementById('halving-timer').textContent = `${days} days, ${hours} hours, ${minutes} minutes left`;
+    document.getElementById('halving-timer').textContent = `${days} days, ${hours} hours, ${minutes} minutes`;
 }
         // Update initially and then every minute
         updateBitcoinPrice();
