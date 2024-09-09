@@ -1,7 +1,7 @@
 use rocket::response::content::RawHtml;
 
 pub fn home() -> RawHtml<&'static str> {
-    RawHtml(include_str!("../templates/home.html"))
+    RawHtml(include_str!("../../index.html"))
 }
 
 pub fn what_is_bitcoin() -> RawHtml<&'static str> {
