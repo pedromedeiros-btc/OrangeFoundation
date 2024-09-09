@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Bitcoin? - OrangeFoundation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/what-is-bitcoin.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="static/images/bitcoin-logo.svg" alt="Bitcoin Logo" class="logo">
+            <span class="foundation-name">OrangeFoundation</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/what-is-bitcoin">what is bitcoin?</a></li>
+                <li><a href="/can-i-mine-it">can i mine it?</a></li>
+                <li><a href="/i-want-to-buy-it">i want to buy it</a></li>
+                <li><a href="/price-history">price history</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-wrapper">
+        <main>
+            <div class="main-content">
+                <h1>What is Bitcoin?</h1>
+                <p class="subtitle">Understanding the Revolutionary Digital Currency</p>
+                <article>
+                    <p>Bitcoin is a groundbreaking digital currency and payment system that operates on a decentralized network. Launched in 2009, it represents a fundamental shift in how we conceptualize and use money. At its core, Bitcoin is designed to be a peer-to-peer electronic cash system that allows online payments to be sent directly from one party to another without going through a financial institution.</p>
+
+                    <h2>Getting Started with Bitcoin</h2>
+                    <p>To use Bitcoin, you need a digital wallet. This can be software on your computer or smartphone, or a specialized hardware device. You can acquire Bitcoin by buying it on an exchange, accepting it as payment for goods or services, or through mining. It's important to secure your wallet and understand the risks associated with holding and using cryptocurrency.</p>
+
+                    <p>While Bitcoin represents a significant innovation in finance and technology, it's important to understand that it's still a relatively new and volatile asset. As with any financial decision, it's crucial to do your own research and understand the risks involved before investing in or using Bitcoin.</p>
+
+                    <h2>Key Characteristics of Bitcoin</h2>
+                    
+                    <h3>Digital and Decentralized</h3>
+                    <p>Bitcoin exists purely in digital form, with no physical coins or notes. Unlike traditional currencies managed by central banks, Bitcoin operates on a peer-to-peer network. This means no single entity controls Bitcoin; instead, it's maintained by a global community of users and developers.</p>
+
+                    <h3>Limited Supply</h3>
+                    <p>There will only ever be 21 million Bitcoins. This scarcity is built into the system, making Bitcoin resistant to inflation and potentially a good store of value. New Bitcoins are created through a process called mining, which also serves to verify and record transactions on the blockchain.</p>
+
+                    <h3>Blockchain Technology</h3>
+                    <p>Bitcoin's underlying technology, the blockchain, is a public ledger that records all transactions. This ensures transparency and security, as every transaction is verified by the network and cannot be altered once recorded.</p>
+
+                    <h3>Security and Transparency</h3>
+                    <p>Bitcoin uses advanced cryptography to secure transactions. Every transaction is verified by the network and then recorded on the blockchain, creating an immutable record. This system makes Bitcoin highly resistant to fraud and double-spending.</p>
+
+                    <h2>How Bitcoin Works</h2>
+                    <p>When you send Bitcoin, your transaction is broadcast to the network. Specialized computers called miners verify and group these transactions into blocks. These blocks are then added to the blockchain, creating a permanent record. Miners are rewarded with newly created Bitcoins for their work, which is how new Bitcoins enter circulation.</p>
+
+                    <h2>Uses of Bitcoin</h2>
+                    <ul>
+                        <li>As a medium of exchange for goods and services</li>
+                        <li>As an investment or store of value</li>
+                        <li>For fast and cheap international money transfers</li>
+                        <li>As a way to preserve financial privacy and freedom</li>
+                    </ul>
+                </article>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="btc-ticker">1 BTC = $<span id="btc-price">Loading...</span></div>
+            <p class="copyright">© 2024 orangefoundation.org</p>
+            <div class="halving-countdown">next halving is in: <span id="halving-timer">Loading...</span></div>
+        </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+    <script src="static/js/btc-stats.js"></script>
+</body>
+</html>

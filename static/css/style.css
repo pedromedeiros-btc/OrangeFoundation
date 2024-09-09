@@ -4,97 +4,98 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
     background: #f2a900;
     color: #fff;
-    padding: 1.2rem 1rem; /* Increased vertical padding if needed */
+    padding: 1rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    position: relative; /* For absolute positioning of the text */
 }
 
 .logo {
-    height: 45px; /* Adjust if your logo height is different */
+    height: 40px;
     width: auto;
+    margin-right: 10px;
 }
 
 .foundation-name {
-    font-style: italic;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 25px; /* Increased font size to match larger logo */
-    position: absolute;
-    left: 55px; /* Adjusted to account for larger logo */
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: nowrap;
-}
-
-nav {
-    flex: 1;
+    font-style: italic;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 1rem;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 0.9rem;
 }
 
 .content-wrapper {
-    display: flex;
-    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 main {
-    padding: 2rem;
-    max-width: 800px;
-    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-content {
+    flex: 1;
 }
 
 h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .subtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: #666;
     margin-bottom: 2rem;
-}
-
-article {
-    font-size: 0.9rem;
 }
 
 article p {
     margin-bottom: 1em;
 }
 
+#btc-stats {
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#btc-stats h3 {
+    margin-top: 0;
+    color: #f2a900;
+}
+
 footer {
     background: #f2a900;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
 }
 
 .footer-content {
@@ -108,20 +109,18 @@ footer {
 .btc-ticker, .halving-countdown {
     font-weight: bold;
     font-size: 0.9rem;
-    flex: 1;
-}
-
-.btc-ticker {
-    text-align: left;
-}
-
-.halving-countdown {
-    text-align: right;
 }
 
 .copyright {
     font-size: 0.8rem;
-    margin: 0 1rem;
-    text-align: center;
-    flex: 1;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #btc-stats {
+        width: 100%;
+    }
 }
