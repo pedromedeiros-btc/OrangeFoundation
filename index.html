@@ -15,11 +15,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="what_is_bitcoin.html">What is Bitcoin?</a></li>
-                <li><a href="bitcoin_mining.html">Bitcoin Mining</a></li>
-                <li><a href="how_to_buy_bitcoin.html">How to Buy Bitcoin</a></li>
-                <li><a href="bitcoin_price_history.html">Bitcoin Price History</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/what-is-bitcoin">What is Bitcoin?</a></li>
+                <li><a href="/bitcoin-mining">Bitcoin Mining</a></li>
+                <li><a href="/how-to-buy-bitcoin">How to Buy Bitcoin</a></li>
+                <li><a href="/bitcoin-price-history">Bitcoin Price History</a></li>
             </ul>
         </nav>
     </header>
@@ -46,12 +46,27 @@
                     <p>Moreover, Bitcoin's fixed supply and deflationary nature make it an excellent store of value, potentially protecting users from the erosion of their purchasing power due to inflation. This characteristic is particularly appealing in an environment where central banks are engaging in unprecedented levels of monetary expansion, which many fear will lead to long-term inflationary pressures.</p>
                 </article>
             </div>
-            <aside id="btc-stats">
-                <h3>Bitcoin Transactions</h3>
-                <p>All time: <span id="tx-all-time">Loading...</span></p>
-                <p>Last month: <span id="tx-last-month">Loading...</span></p>
-                <p>Today: <span id="tx-today">Loading...</span></p>
+            <aside id="sats-converter">
+                <h1>Satoshi Converter</h1>
+                <p>A Satoshi is the smallest unit of Bitcoin, equal to 0.00000001 BTC.</p>
+                <div class="converter-input">
+                    <input type="number" id="sats-input" placeholder="Enter Satoshis">
+                    <span>Satoshis</span>
+                </div>
+                <div class="converter-input">
+                    <input type="number" id="fiat-input" placeholder="Enter amount">
+                    <select id="currency-select">
+                        <option value="USD">USD</option>
+                        <option value="BRL">BRL</option>
+                    </select>
+                </div>
+                <div class="sats-dashboard">
+                    <p>1 Satoshi = <span id="one-sat-btc">0.00000001</span> BTC</p>
+                    <p>10,000 Satoshis = <span id="ten-k-sats-btc">0.0001</span> BTC</p>
+                    <p>1,000,000 Satoshis = <span id="million-sats-btc">0.01</span> BTC</p>
+                </div>
             </aside>
+
         </main>
     </div>
     <footer>
@@ -64,5 +79,6 @@
 
     <script src="static/js/script.js"></script>
     <script src="static/js/btc-stats.js"></script>
+    <script src="static/js/sats-converter.js"></script>
 </body>
 </html>

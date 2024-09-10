@@ -57,16 +57,21 @@ nav ul li a {
 
 main {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 2rem;
 }
 
 .main-content {
     flex: 1;
+    max-width: 90%; /* Adjust this value to control the width of the main content */
 }
 
-h1 {
+.main-content h1,
+#sats-converter h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 .subtitle {
@@ -79,17 +84,54 @@ article p {
     margin-bottom: 1em;
 }
 
-#btc-stats {
+#sats-converter {
     width: 300px;
     background-color: #f8f9fa;
-    padding: 1rem;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-#btc-stats h3 {
+#sats-converter h1 {
     margin-top: 0;
-    color: #f2a900;
+    margin-bottom: 15px;
+}
+
+#sats-converter p {
+    margin-bottom: 10px;
+}
+
+.converter-input {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.converter-input input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.converter-input span,
+.converter-input select {
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.sats-dashboard {
+    margin-top: 20px;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sats-dashboard p {
+    margin: 5px 0;
+    font-size: 0.9em;
 }
 
 footer {
@@ -120,7 +162,43 @@ footer {
         flex-direction: column;
     }
 
-    #btc-stats {
+    #sats-converter {
         width: 100%;
+    }
+    .reverse-converter {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    #fiat-input {
+        flex-grow: 1;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+    }
+    
+    #fiat-currency {
+        padding: 5px 10px;
+        background-color: #e9ecef;
+        border: 1px solid #ccc;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-content,
+    #sats-converter {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #sats-converter {
+        position: static;
     }
 }
